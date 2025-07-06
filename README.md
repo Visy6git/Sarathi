@@ -34,7 +34,7 @@ Many citizens — especially in rural areas — struggle to access government sc
 |-------------|---------------|-------------|---------------|
 | ![home](docs/home.png) | ![search](docs/search.png) | ![voice](docs/voice.png) | ![result](docs/result.png) |
 
-> https://youtu.be/BeUDbRJ5Ufg
+> 🎥 [Watch Demo Video](https://youtu.be/BeUDbRJ5Ufg)
   
 ---
 
