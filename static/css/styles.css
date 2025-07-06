@@ -1,0 +1,154 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0f2f1, #fff8e1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  width: 85%;
+  max-width: 700px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.logo {
+  width: 180px;
+  margin-right: 15px;
+  animation: logoAnimation 5s ease-in-out infinite;
+}
+@keyframes logoAnimation {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.title {
+  font-size: 2em;
+  color: #2e7d32;
+  text-align: left;
+  font-weight: 600;
+}
+.mic-button, .proceed-button {
+  background-color: #43A047;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+.mic-button:hover, .proceed-button:hover { background-color: #388E3C; }
+.mic-button:active, .proceed-button:active { transform: scale(0.95); }
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+.bubble {
+  position: absolute;
+  bottom: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(67, 160, 71, 0.3);
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: floatUp 10s linear infinite;
+}
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0f2f1, #fff8e1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  width: 85%;
+  max-width: 700px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.mic-button, .proceed-button {
+  background-color: #43A047;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+.mic-button:hover, .proceed-button:hover { background-color: #388E3C; }
+.mic-button:active, .proceed-button:active { transform: scale(0.95); }
+.warp-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: none;
+  z-index: 1000;
+}
+.warp-animation div {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+  animation: warpEffect 2s linear infinite;
+}
+@keyframes warpEffect {
+  from { transform: scale(1) translateY(0); opacity: 1; }
+  to { transform: scale(10) translateY(-200px); opacity: 0; }
+}
